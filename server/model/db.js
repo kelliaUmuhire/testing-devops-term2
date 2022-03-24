@@ -3,9 +3,10 @@ const mongoose = require("mongoose");
 const db = {};
 db.mongoose = mongoose;
 
+// process.env.MONGO_URI
 //connect to MongoDB server
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect("mongodb://mongo:27017/testing", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
