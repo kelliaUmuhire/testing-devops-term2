@@ -1,4 +1,4 @@
-import { newToken, tokenInfo } from "../routes";
+const { newToken, tokenInfo } = require("../utils/token.utils");
 
 describe("Token Functions", () => {
   it("Creates a token with days", () => {
